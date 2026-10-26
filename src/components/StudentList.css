@@ -1,0 +1,97 @@
+
+.student-container {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.list-header h2 {
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.student-count {
+  color: #1d4ed8;
+  background-color: #dbeafe;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.student-table th,
+.student-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.student-table th {
+  background-color: #2563eb;
+  color: white;
+}
+
+.student-table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.student-table tbody tr:hover {
+  background-color: #eff6ff;
+}
+
+.delete-button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 9px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
+}
+
+.delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+}
+
+@media (max-width: 600px) {
+  .student-container {
+    padding: 15px;
+  }
+
+  .student-table th,
+  .student-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
